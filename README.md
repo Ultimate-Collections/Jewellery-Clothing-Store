@@ -1,36 +1,221 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Ultimate Collections - Jewellery & Clothing Store
 
-## Getting Started
+A modern e-commerce storefront built with Next.js, TypeScript and Tailwind CSS.
 
-First, run the development server:
+## Live Demo
+
+https://jewellery-clothing-store.vercel.app
+
+---
+
+## Project Overview
+
+Ultimate Collections is a responsive jewellery and clothing showcase website designed for online product discovery and customer engagement.
+
+The application includes product browsing, category filtering, WhatsApp ordering, product detail pages, testimonials, branding, SEO optimization and deployment on Vercel.
+
+---
+
+## Features Implemented
+
+### Product Catalog
+
+- Jewellery Collection
+- Sarees Collection
+- Kurtis Collection
+- Handbags Collection
+- Kids Wear Collection
+
+### Product Search
+
+- Search products by name
+- Instant filtering
+
+### Category Filtering
+
+- Jewellery
+- Sarees
+- Kurtis
+- Handbags
+- Kids Wear
+
+### Product Details Page
+
+- Dynamic routing using Next.js
+- Individual product information
+- Product images
+- WhatsApp order button
+
+### Shopping Features
+
+- Add to Cart
+- Cart View
+- Checkout Page
+
+### Customer Engagement
+
+- WhatsApp Floating Button
+- Instagram Floating Button
+- Testimonials Section
+- Shop By Category Section
+
+### Branding
+
+- Custom Logo
+- Custom Favicon
+- Open Graph Images
+- Twitter Card Images
+
+### Music Integration
+
+- Spotify Playlist Embed
+
+### SEO Features
+
+- Metadata Configuration
+- Sitemap Generation
+- Open Graph Tags
+- Twitter Meta Tags
+
+### Responsive Design
+
+- Mobile Friendly
+- Tablet Friendly
+- Desktop Optimized
+
+---
+
+## Tech Stack
+
+### Frontend
+
+- Next.js 16
+- React
+- TypeScript
+- Tailwind CSS
+
+### Deployment
+
+- Vercel
+
+### Version Control
+
+- Git
+- GitHub
+
+---
+
+## Project Structure
+
+```bash
+app/
+├── components/
+│   ├── Header.tsx
+│   ├── Hero.tsx
+│   ├── ProductCard.tsx
+│   ├── ShopByCategory.tsx
+│   ├── Testimonials.tsx
+│   ├── SpotifySection.tsx
+│   ├── FloatingWhatsApp.tsx
+│   ├── FloatingInstagram.tsx
+│   └── WhyChooseUs.tsx
+│
+├── contact/
+├── cart/
+├── checkout/
+├── product/[id]/
+│
+├── sitemap.ts
+├── layout.tsx
+└── page.tsx
+
+src/
+└── lib/
+    └── products.ts
+
+public/
+└── products/
+```
+
+---
+
+## DevOps & Deployment Skills Demonstrated
+
+- Git Version Control
+- GitHub Repository Management
+- Vercel Deployment
+- Production Builds
+- Next.js Optimization
+- Static Asset Management
+- SEO Configuration
+- Troubleshooting Build Errors
+- Linux (WSL) Development Environment
+
+---
+
+## Local Setup
+
+Clone Repository
+
+```bash
+git clone <repo-url>
+```
+
+Install Dependencies
+
+```bash
+npm install
+```
+
+Run Development Server
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Build Production Version
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+npm run build
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Start Production Server
 
-## Learn More
+```bash
+npm start
+```
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Deployment
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Application is deployed using Vercel.
 
-## Deploy on Vercel
+Production URL:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+https://jewellery-clothing-store.vercel.app
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+## Future Improvements
+
+- Payment Gateway Integration
+- Admin Dashboard
+- Inventory Management
+- Order Tracking
+- Customer Login
+- Product Reviews
+- Wishlist Feature
+- Email Notifications
+- Analytics Dashboard
+
+---
+
+## Author
+
+Durga Prasad P J
+
+DevOps Engineer | AWS | Docker | Kubernetes | Terraform | CI/CD
+
+GitHub:
+https://github.com/prasadpj509
