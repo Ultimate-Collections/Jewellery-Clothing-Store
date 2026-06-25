@@ -1,164 +1,277 @@
-# Ultimate Collections - Jewellery & Clothing Store
+# Ultimate Collections - Production E-Commerce Platform
 
-A modern e-commerce storefront built with Next.js, TypeScript and Tailwind CSS.
+A production-ready e-commerce storefront built with Next.js 16, TypeScript, Tailwind CSS, Neon PostgreSQL, and Vercel.
 
-## Live Demo
+---
+
+## Live Application
+
+Production URL:
 
 https://jewellery-clothing-store.vercel.app
+
+GitHub Repository:
+
+https://github.com/prasadpj509
 
 ---
 
 ## Project Overview
 
-Ultimate Collections is a responsive jewellery and clothing showcase website designed for online product discovery and customer engagement.
+Ultimate Collections is a modern e-commerce platform designed for jewellery and fashion product showcasing, customer engagement, and online order generation.
 
-The application includes product browsing, category filtering, WhatsApp ordering, product detail pages, testimonials, branding, SEO optimization and deployment on Vercel.
+The platform includes:
 
----
-
-## Features Implemented
-
-### Product Catalog
-
-- Jewellery Collection
-- Sarees Collection
-- Kurtis Collection
-- Handbags Collection
-- Kids Wear Collection
-
-### Product Search
-
-- Search products by name
-- Instant filtering
-
-### Category Filtering
-
-- Jewellery
-- Sarees
-- Kurtis
-- Handbags
-- Kids Wear
-
-### Product Details Page
-
-- Dynamic routing using Next.js
-- Individual product information
-- Product images
-- WhatsApp order button
-
-### Shopping Features
-
-- Add to Cart
-- Cart View
-- Checkout Page
-
-### Customer Engagement
-
-- WhatsApp Floating Button
-- Instagram Floating Button
-- Testimonials Section
-- Shop By Category Section
-
-### Branding
-
-- Custom Logo
-- Custom Favicon
-- Open Graph Images
-- Twitter Card Images
-
-### Music Integration
-
-- Spotify Playlist Embed
-
-### SEO Features
-
-- Metadata Configuration
-- Sitemap Generation
-- Open Graph Tags
-- Twitter Meta Tags
-
-### Responsive Design
-
-- Mobile Friendly
-- Tablet Friendly
-- Desktop Optimized
+* Product catalog management
+* Dynamic product APIs
+* PostgreSQL database integration
+* Admin dashboard
+* Audit logging system
+* Authentication layer
+* Cart and checkout workflow
+* SEO optimization
+* Production deployment
 
 ---
 
-## Tech Stack
+## Features
+
+### Customer Features
+
+#### Product Catalog
+
+* Jewellery Collection
+* Sarees Collection
+* Kurtis Collection
+* Handbags Collection
+* Kids Wear Collection
+
+#### Product Search
+
+* Search products by name
+* Dynamic filtering
+
+#### Product Details
+
+* Dynamic product pages
+* Product descriptions
+* Product images
+* WhatsApp ordering
+
+#### Shopping Experience
+
+* Add To Cart
+* Cart Summary
+* Checkout Page
+
+#### Customer Engagement
+
+* WhatsApp Integration
+* Instagram Integration
+* Testimonials
+* Shop By Category
+
+#### Responsive Design
+
+* Mobile Friendly
+* Tablet Friendly
+* Desktop Friendly
+
+---
+
+## Admin Features
+
+### Admin Dashboard
+
+* Product Management
+* Product CRUD Operations
+* Admin Authentication
+* Audit Tracking
+
+### Audit Logging
+
+Tracks:
+
+* Product Creation
+* Product Updates
+* Product Deletion
+* Administrative Actions
+
+Audit records are stored in PostgreSQL.
+
+---
+
+## Backend APIs
+
+### Products API
+
+/api/products
+
+Supports:
+
+* Product Listing
+* Product Retrieval
+* Filtering
+* Database Queries
+
+### Admin Audit API
+
+/api/admin/audit
+
+Supports:
+
+* Audit Log Retrieval
+* Pagination
+* Filtering
+
+### Authentication API
+
+/api/auth/[...nextauth]
+
+Powered by NextAuth.
+
+### Database Health API
+
+/api/db-test
+
+Used for production database verification.
+
+---
+
+## Database
+
+### PostgreSQL (Neon)
+
+Tables:
+
+#### products
+
+Stores:
+
+* Product Name
+* Category
+* Price
+* Description
+* Images
+
+#### admin_audit
+
+Stores:
+
+* Admin User
+* Action
+* Product ID
+* Payload
+* IP Address
+* Timestamp
+
+---
+
+## Technology Stack
 
 ### Frontend
 
-- Next.js 16
-- React
-- TypeScript
-- Tailwind CSS
+* Next.js 16
+* React
+* TypeScript
+* Tailwind CSS
+
+### Backend
+
+* Next.js Route Handlers
+* PostgreSQL
+* Neon Database
+
+### Authentication
+
+* NextAuth
 
 ### Deployment
 
-- Vercel
+* Vercel
 
 ### Version Control
 
-- Git
-- GitHub
+* Git
+* GitHub
+
+### Development Environment
+
+* Windows
+* WSL (Ubuntu)
+* VS Code
 
 ---
 
-## Project Structure
+## Architecture
 
-```bash
-app/
-├── components/
-│   ├── Header.tsx
-│   ├── Hero.tsx
-│   ├── ProductCard.tsx
-│   ├── ShopByCategory.tsx
-│   ├── Testimonials.tsx
-│   ├── SpotifySection.tsx
-│   ├── FloatingWhatsApp.tsx
-│   ├── FloatingInstagram.tsx
-│   └── WhyChooseUs.tsx
-│
-├── contact/
-├── cart/
-├── checkout/
-├── product/[id]/
-│
-├── sitemap.ts
-├── layout.tsx
-└── page.tsx
-
-src/
-└── lib/
-    └── products.ts
-
-public/
-└── products/
-```
+Client
+↓
+Next.js Application
+↓
+API Routes
+↓
+Neon PostgreSQL
+↓
+Vercel Deployment
 
 ---
 
-## DevOps & Deployment Skills Demonstrated
+## DevOps Skills Demonstrated
 
-- Git Version Control
-- GitHub Repository Management
-- Vercel Deployment
-- Production Builds
-- Next.js Optimization
-- Static Asset Management
-- SEO Configuration
-- Troubleshooting Build Errors
-- Linux (WSL) Development Environment
+### Source Control
+
+* Git
+* GitHub Workflow
+* Branch Management
+
+### Cloud & Hosting
+
+* Vercel Deployment
+* Environment Variable Management
+* Production Releases
+
+### Database Operations
+
+* PostgreSQL
+* Neon Database
+* Connection Troubleshooting
+* Query Optimization
+
+### Application Deployment
+
+* Production Builds
+* Runtime Validation
+* Deployment Verification
+* Environment Configuration
+
+### Linux Skills
+
+* WSL Administration
+* Networking Troubleshooting
+* Process Management
+* Port Debugging
+
+### Troubleshooting Experience
+
+Resolved:
+
+* PostgreSQL Connection Issues
+* Environment Variable Problems
+* Build Failures
+* Next.js Route Issues
+* Vercel Deployment Issues
+* Production Runtime Errors
 
 ---
 
-## Local Setup
+## Local Development
 
 Clone Repository
 
 ```bash
-git clone <repo-url>
+git clone <repository-url>
+cd jewellery-clothing-store
 ```
 
 Install Dependencies
@@ -173,13 +286,13 @@ Run Development Server
 npm run dev
 ```
 
-Build Production Version
+Build Application
 
 ```bash
 npm run build
 ```
 
-Start Production Server
+Run Production Build
 
 ```bash
 npm start
@@ -187,27 +300,48 @@ npm start
 
 ---
 
-## Deployment
+## Environment Variables
 
-Application is deployed using Vercel.
-
-Production URL:
-
-https://jewellery-clothing-store.vercel.app
+```env
+DATABASE_URL=
+NEXTAUTH_SECRET=
+ADMIN_USER=
+ADMIN_PASS=
+CONTACT_WHATSAPP=
+INSTAGRAM_HANDLE=
+NEXT_PUBLIC_CONTACT_WHATSAPP=
+NEXT_PUBLIC_INSTAGRAM_HANDLE=
+```
 
 ---
 
-## Future Improvements
+## Production Validation
 
-- Payment Gateway Integration
-- Admin Dashboard
-- Inventory Management
-- Order Tracking
-- Customer Login
-- Product Reviews
-- Wishlist Feature
-- Email Notifications
-- Analytics Dashboard
+Verified:
+
+* Successful Build
+* Successful Deployment
+* Database Connectivity
+* Product APIs
+* Admin Audit APIs
+* PostgreSQL Integration
+* Environment Variables
+* Dynamic Routes
+
+---
+
+## Future Enhancements
+
+* Payment Gateway Integration
+* Razorpay Integration
+* Inventory Management
+* Order Management
+* Customer Accounts
+* Email Notifications
+* Analytics Dashboard
+* Product Reviews
+* Wishlist Functionality
+* Role Based Access Control
 
 ---
 
@@ -215,7 +349,30 @@ https://jewellery-clothing-store.vercel.app
 
 Durga Prasad P J
 
-DevOps Engineer | AWS | Docker | Kubernetes | Terraform | CI/CD
+DevOps Engineer
+
+Skills:
+
+* AWS
+* Docker
+* Kubernetes
+* Terraform
+* CI/CD
+* Linux
+* PostgreSQL
+* Next.js
+* Vercel
 
 GitHub:
 https://github.com/prasadpj509
+
+LinkedIn:
+(Add your LinkedIn URL)
+
+---
+
+## Project Status
+
+Production Ready
+
+Successfully deployed and running on Vercel with Neon PostgreSQL backend.
